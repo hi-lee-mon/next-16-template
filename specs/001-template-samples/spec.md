@@ -148,10 +148,21 @@ Four mock data domains, each demonstrating a specific Next.js rendering strategy
 
 ## Assumptions
 
-- Developers have Node.js 18+ installed
+- Developers have Node.js 18+ installed and Docker for local development
 - Developers have basic familiarity with Next.js concepts
 - The template targets developers who want to experiment, not production deployment
-- Sample data can be static/mock data (no database required)
 - Japanese UI text will be used for labels, messages, and descriptions as per project constitution
 - shadcn/ui components will be used for UI samples (copy-paste approach, minimal external dependencies)
 - Zod will be used for schema-based validation with TypeScript type inference
+
+## Technical Decisions (from /speckit.plan)
+
+### Data Persistence
+- **Database**: PostgreSQL (via Docker container for local development)
+- **ORM**: Prisma for type-safe database access
+- **Data Access Layer**: Centralized in `data/` folder with co-located feature-specific queries
+
+### Architecture
+- **App Structure**: Co-location principle - feature-specific actions and data access co-located with routes
+- **Server Actions**: Co-located with their respective feature pages
+- **Data Folder**: Feature-specific data access does not cross feature boundaries
