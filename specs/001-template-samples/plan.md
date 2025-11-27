@@ -15,7 +15,7 @@ Create a Next.js 16 template project with pre-built sample pages demonstrating A
 **Testing**: Biome for linting/formatting, manual testing via dev server
 **Target Platform**: Web (Node.js 18+)
 **Project Type**: Web application (Next.js App Router)
-**Performance Goals**: Dev server startup < 10s, page load < 2s (local)
+**Performance Goals**: Dev server startup < 10s (terminal output), page load < 2s (Chrome DevTools Network tab, local)
 **Constraints**: Docker required for database, Japanese UI text
 **Scale/Scope**: Template for experimentation, 4 data domains, ~10 sample pages
 

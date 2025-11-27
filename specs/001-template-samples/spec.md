@@ -9,7 +9,7 @@
 
 ### Session 2025-11-27
 
-- Q: サンプルページの構成方法は？ → A: 各サンプルを独立したページとして実装（/samples/api, /samples/actions 等）
+- Q: サンプルページの構成方法は？ → A: 各サンプルを独立した機能ルートとして実装（/todo, /user, /product, /blog）
 - Q: サンプルデータのドメインは？ → A: 4種類すべて実装（TODO、ユーザー、商品、ブログ）- データ属性によるレンダリング戦略の実験を可能にするため
 - Q: UIコンポーネントのアプローチは？ → A: shadcn/ui（Tailwindベース、コピー方式）
 - Q: バリデーションのアプローチは？ → A: Zod（スキーマベース、TypeScript型生成）
@@ -109,7 +109,7 @@ As a developer who wants to experiment with data handling libraries, I want to s
 ### Functional Requirements
 
 - **FR-001**: Template MUST include a home page with navigation to all sample pages
-- **FR-001a**: Sample pages MUST be organized as independent pages under `/samples/*` route structure (e.g., `/samples/api`, `/samples/actions`, `/samples/ui`, `/samples/data-fetching`)
+- **FR-001a**: Sample pages MUST be organized as independent feature routes (`/todo`, `/user`, `/product`, `/blog`) with co-located Server Actions and components
 - **FR-002**: Template MUST include sample API routes demonstrating GET request handling for each data domain (TODO, User, Product, Blog)
 - **FR-003**: Template MUST include sample API routes demonstrating POST request handling with Zod schema validation for each data domain
 - **FR-004**: Template MUST include sample server actions with form integration and Zod validation for each data domain
