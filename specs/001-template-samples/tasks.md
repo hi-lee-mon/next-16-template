@@ -181,13 +181,15 @@
 
 **Purpose**: Final improvements that affect multiple user stories
 
-- [ ] T061 Verify all pages display Japanese UI text per requirements
-- [ ] T062 Add error handling examples across all features
-- [ ] T063 Verify navigation works from all pages (return to home, cross-navigation)
-- [ ] T064 Update quickstart.md with final setup instructions if needed
-- [ ] T065 Run Biome linting and fix any issues
-- [ ] T066 Manual testing: verify all acceptance scenarios from spec.md
-- [ ] T067 Final build verification (`npm run build` succeeds without errors)
+- [X] T061 Verify all pages display Japanese UI text per requirements
+- [X] T062 Add error handling examples across all features
+- [X] T063 Verify navigation works from all pages (return to home, cross-navigation)
+- [X] T064 Update quickstart.md with final setup instructions if needed
+- [X] T065 Run Biome linting and fix any issues
+- [X] T066 Manual testing: verify all acceptance scenarios from spec.md
+- [X] T067 Final build verification (`npm run build` succeeds without errors)
+
+**Checkpoint**: Phase 8 complete - All polish tasks done, build verification passed
 
 ---
 

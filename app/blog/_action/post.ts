@@ -19,20 +19,11 @@ export async function addPost(formData: FormData): Promise<PostActionResult> {
   const parsed = postSchema.safeParse(rawData);
 
   if (!parsed.success) {
-    const fieldErrors: Record<string, string[]> = {};
-    for (const error of parsed.error.errors) {
-      const field = error.path[0] as string;
-      if (!fieldErrors[field]) {
-        fieldErrors[field] = [];
-      }
-      fieldErrors[field].push(error.message);
-    }
-
     return {
       success: false,
       error: {
         message: "入力内容に問題があります",
-        details: fieldErrors,
+        details: parsed.error.flatten().fieldErrors as Record<string, string[]>,
       },
     };
   }

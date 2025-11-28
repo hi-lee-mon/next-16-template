@@ -113,45 +113,57 @@ docker compose -f docker/docker-compose.yml down -v   # Stop and remove data
 ## Project Structure Overview
 
 ```
-src/
-├── app/
-│   ├── todo/                      # TODO feature (Dynamic)
-│   │   ├── page.tsx
-│   │   ├── _action/               # Co-located server actions
-│   │   ├── _components/           # Co-located UI components
-│   │   └── ...                    # _data/, _function/, _hook/, _type/
-│   ├── user/                      # User feature (Dynamic)
-│   │   └── ...                    # Same co-location pattern
-│   ├── product/                   # Product feature (ISR)
-│   │   └── ...
-│   ├── blog/                      # Blog feature (Static)
-│   │   ├── page.tsx
-│   │   └── [slug]/
-│   │       └── page.tsx
-│   └── api/                       # API routes (route.ts only)
-│       ├── todos/route.ts
-│       ├── users/route.ts
-│       ├── products/route.ts
-│       └── posts/route.ts
+app/                               # Next.js App Router
+├── layout.tsx                     # Root layout with navigation
+├── page.tsx                       # Home page
+├── error.tsx                      # Global error boundary
+├── not-found.tsx                  # 404 page
+├── globals.css                    # Global styles (Tailwind)
 │
-├── components/                    # Cross-feature shared components
-│   ├── ui/                        # shadcn/ui components
-│   └── common/                    # Common layout components
+├── todo/                          # TODO feature (Dynamic rendering)
+│   ├── page.tsx
+│   ├── _action/                   # Co-located server actions
+│   ├── _components/               # Co-located UI components
+│   └── _type/                     # Co-located TypeScript types
 │
-├── data/                          # Cross-feature shared data access
-│   ├── db.ts                      # Prisma client
-│   ├── schema/                    # Zod validation schemas
-│   └── queries/                   # Data access layer
+├── user/                          # User feature (Dynamic rendering)
+│   └── ...                        # Same co-location pattern
 │
-└── lib/                           # Utility functions
+├── product/                       # Product feature (ISR)
+│   └── ...
+│
+├── blog/                          # Blog feature (Static rendering)
+│   ├── page.tsx
+│   ├── [slug]/page.tsx            # Dynamic route with generateStaticParams
+│   └── _components/               # Includes client-side search
+│
+└── api/                           # API routes (route.ts only)
+    ├── todos/route.ts
+    ├── users/route.ts
+    ├── products/route.ts
+    ├── posts/route.ts
+    └── posts/[slug]/route.ts
+
+components/                        # Cross-feature shared components
+├── ui/                            # shadcn/ui components
+└── common/                        # Common layout components (Header, Nav)
+
+data/                              # Cross-feature shared data access
+├── db.ts                          # Prisma client singleton
+├── schema/                        # Zod validation schemas
+└── queries/                       # Data access layer
+
+lib/                               # Utility functions
+├── utils.ts                       # cn helper for className merging
+└── constants.ts                   # Shared constants
 
 prisma/
-├── schema.prisma                  # Database schema
-├── seed.ts                        # Seed data
+├── schema.prisma                  # Database schema (4 models)
+├── seed.ts                        # Sample data seeding
 └── migrations/                    # Migration files
 
 docker/
-└── docker-compose.yml             # PostgreSQL container
+└── docker-compose.yml             # PostgreSQL container config
 ```
 
 ## Troubleshooting
@@ -193,6 +205,7 @@ pnpm dev -- -p 3001
 ## Next Steps
 
 1. Explore the feature pages to understand the patterns
-2. Check the source code in `src/app/todo/`, `src/app/user/`, `src/app/product/`, `src/app/blog/` for implementation details
+2. Check the source code in `app/todo/`, `app/user/`, `app/product/`, `app/blog/` for implementation details
 3. Modify or extend the features for your experiments
-4. Use the data access layer in `src/data/` as a reference for your own features
+4. Use the data access layer in `data/` as a reference for your own features
+5. Review error handling examples in `app/error.tsx` and `app/not-found.tsx`
