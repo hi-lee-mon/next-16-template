@@ -161,17 +161,17 @@
 
 #### Blog Feature (Static Rendering)
 
-- [ ] T053 [P] [US5] Create Post types in `src/app/blog/_type/post.ts`
-- [ ] T054 [P] [US5] Create Post server actions (create) in `src/app/blog/_action/post.ts`
-- [ ] T055 [US5] Create PostList component in `src/app/blog/_components/post-list.tsx`
-- [ ] T056 [US5] Create PostCard component in `src/app/blog/_components/post-card.tsx`
-- [ ] T057 [US5] Create PostContent component (Markdown rendering) in `src/app/blog/_components/post-content.tsx`
-- [ ] T058 [US5] Create Blog list page with static rendering in `src/app/blog/page.tsx`
-- [ ] T059 [US5] Create Blog post detail page with generateStaticParams in `src/app/blog/[slug]/page.tsx`
+- [X] T053 [P] [US5] Create Post types in `src/app/blog/_type/post.ts`
+- [X] T054 [P] [US5] Create Post server actions (create) in `src/app/blog/_action/post.ts`
+- [X] T055 [US5] Create PostList component in `src/app/blog/_components/post-list.tsx`
+- [X] T056 [US5] Create PostCard component in `src/app/blog/_components/post-card.tsx`
+- [X] T057 [US5] Create PostContent component (Markdown rendering) in `src/app/blog/_components/post-content.tsx`
+- [X] T058 [US5] Create Blog list page with static rendering in `src/app/blog/page.tsx`
+- [X] T059 [US5] Create Blog post detail page with generateStaticParams in `src/app/blog/[slug]/page.tsx`
 
 #### Client-Side Data Fetching Example
 
-- [ ] T060 [US5] Create client-side data fetching example with loading/error states in `src/app/blog/_components/post-search.tsx`
+- [X] T060 [US5] Create client-side data fetching example with loading/error states in `src/app/blog/_components/post-search.tsx`
 
 **Checkpoint**: User Story 5 complete - Blog demonstrates both static and client-side data fetching patterns
 
