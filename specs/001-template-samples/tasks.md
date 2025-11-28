@@ -89,11 +89,11 @@
 
 ### Implementation for User Story 2
 
-- [ ] T029 [P] [US2] Implement Todos API route (GET, POST) in `src/app/api/todos/route.ts`
-- [ ] T030 [P] [US2] Implement Users API route (GET, POST) in `src/app/api/users/route.ts`
-- [ ] T031 [P] [US2] Implement Products API route (GET, POST) in `src/app/api/products/route.ts`
-- [ ] T032 [P] [US2] Implement Posts API route (GET, POST) in `src/app/api/posts/route.ts`
-- [ ] T033 [US2] Implement Posts by slug API route (GET) in `src/app/api/posts/[slug]/route.ts`
+- [X] T029 [P] [US2] Implement Todos API route (GET, POST) in `app/api/todos/route.ts`
+- [X] T030 [P] [US2] Implement Users API route (GET, POST) in `app/api/users/route.ts`
+- [X] T031 [P] [US2] Implement Products API route (GET, POST) in `app/api/products/route.ts`
+- [X] T032 [P] [US2] Implement Posts API route (GET, POST) in `app/api/posts/route.ts`
+- [X] T033 [US2] Implement Posts by slug API route (GET) in `app/api/posts/[slug]/route.ts`
 
 **Checkpoint**: User Story 2 complete - All API endpoints respond correctly
 
