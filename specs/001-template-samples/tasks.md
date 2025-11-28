@@ -109,21 +109,21 @@
 
 #### TODO Feature (Dynamic Rendering)
 
-- [ ] T034 [P] [US3] Create Todo types in `src/app/todo/_type/todo.ts`
-- [ ] T035 [P] [US3] Create Todo server actions (create, toggle, delete) in `src/app/todo/_action/todo.ts`
-- [ ] T036 [US3] Create TodoForm component in `src/app/todo/_components/todo-form.tsx`
-- [ ] T037 [US3] Create TodoList component in `src/app/todo/_components/todo-list.tsx`
-- [ ] T038 [US3] Create TodoItem component in `src/app/todo/_components/todo-item.tsx`
-- [ ] T039 [US3] Create TODO page with Server Actions in `src/app/todo/page.tsx`
+- [X] T034 [P] [US3] Create Todo types in `app/todo/_type/todo.ts`
+- [X] T035 [P] [US3] Create Todo server actions (create, toggle, delete) in `app/todo/_action/todo.ts`
+- [X] T036 [US3] Create TodoForm component in `app/todo/_components/todo-form.tsx`
+- [X] T037 [US3] Create TodoList component in `app/todo/_components/todo-list.tsx`
+- [X] T038 [US3] Create TodoItem component in `app/todo/_components/todo-item.tsx`
+- [X] T039 [US3] Create TODO page with Server Actions in `app/todo/page.tsx`
 
 #### User Feature (Dynamic Rendering)
 
-- [ ] T040 [P] [US3] Create User types in `src/app/user/_type/user.ts`
-- [ ] T041 [P] [US3] Create User server actions (create, update, delete) in `src/app/user/_action/user.ts`
-- [ ] T042 [US3] Create UserForm component in `src/app/user/_components/user-form.tsx`
-- [ ] T043 [US3] Create UserList component in `src/app/user/_components/user-list.tsx`
-- [ ] T044 [US3] Create UserCard component in `src/app/user/_components/user-card.tsx`
-- [ ] T045 [US3] Create User page with Server Actions in `src/app/user/page.tsx`
+- [X] T040 [P] [US3] Create User types in `app/user/_type/user.ts`
+- [X] T041 [P] [US3] Create User server actions (create, update, delete) in `app/user/_action/user.ts`
+- [X] T042 [US3] Create UserForm component in `app/user/_components/user-form.tsx`
+- [X] T043 [US3] Create UserList component in `app/user/_components/user-list.tsx`
+- [X] T044 [US3] Create UserCard component in `app/user/_components/user-card.tsx`
+- [X] T045 [US3] Create User page with Server Actions in `app/user/page.tsx`
 
 **Checkpoint**: User Story 3 complete - TODO and User pages demonstrate Server Actions with forms
 
