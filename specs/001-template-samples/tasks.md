@@ -72,10 +72,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T025 [P] [US1] Create Header component in `src/components/common/header.tsx`
-- [ ] T026 [P] [US1] Create Navigation component in `src/components/common/nav.tsx`
-- [ ] T027 [US1] Create root layout with navigation in `src/app/layout.tsx`
-- [ ] T028 [US1] Create home page with sample page listings in `src/app/page.tsx`
+- [X] T025 [P] [US1] Create Header component in `src/components/common/header.tsx`
+- [X] T026 [P] [US1] Create Navigation component in `src/components/common/nav.tsx`
+- [X] T027 [US1] Create root layout with navigation in `src/app/layout.tsx`
+- [X] T028 [US1] Create home page with sample page listings in `src/app/page.tsx`
 
 **Checkpoint**: User Story 1 complete - Home page shows navigation to all sample features
 
