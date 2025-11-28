@@ -43,22 +43,22 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T009 Define Prisma schema with all entities (Todo, User, Product, Post) in `prisma/schema.prisma`
-- [ ] T010 Run Prisma migration to create database tables
-- [ ] T011 Create Prisma client singleton in `src/data/db.ts`
-- [ ] T012 [P] Create Zod schema for Todo in `src/data/schema/todo.ts`
-- [ ] T013 [P] Create Zod schema for User in `src/data/schema/user.ts`
-- [ ] T014 [P] Create Zod schema for Product in `src/data/schema/product.ts`
-- [ ] T015 [P] Create Zod schema for Post in `src/data/schema/post.ts`
-- [ ] T016 [P] Create data queries for Todo in `src/data/queries/todos.ts`
-- [ ] T017 [P] Create data queries for User in `src/data/queries/users.ts`
-- [ ] T018 [P] Create data queries for Product in `src/data/queries/products.ts`
-- [ ] T019 [P] Create data queries for Post in `src/data/queries/posts.ts`
-- [ ] T020 Create seed data script in `prisma/seed.ts`
-- [ ] T021 Configure seed script in `package.json` and run seeding
-- [ ] T022 Create utility functions in `src/lib/utils.ts` (cn helper for className merging)
-- [ ] T023 Create constants file in `src/lib/constants.ts`
-- [ ] T024 [P] Configure next/font with Japanese font (Noto Sans JP) in `src/app/layout.tsx`
+- [X] T009 Define Prisma schema with all entities (Todo, User, Product, Post) in `prisma/schema.prisma`
+- [X] T010 Run Prisma migration to create database tables
+- [X] T011 Create Prisma client singleton in `data/db.ts`
+- [X] T012 [P] Create Zod schema for Todo in `data/schema/todo.ts`
+- [X] T013 [P] Create Zod schema for User in `data/schema/user.ts`
+- [X] T014 [P] Create Zod schema for Product in `data/schema/product.ts`
+- [X] T015 [P] Create Zod schema for Post in `data/schema/post.ts`
+- [X] T016 [P] Create data queries for Todo in `data/queries/todos.ts`
+- [X] T017 [P] Create data queries for User in `data/queries/users.ts`
+- [X] T018 [P] Create data queries for Product in `data/queries/products.ts`
+- [X] T019 [P] Create data queries for Post in `data/queries/posts.ts`
+- [X] T020 Create seed data script in `prisma/seed.ts`
+- [X] T021 Configure seed script in `prisma.config.ts` and run seeding
+- [X] T022 Create utility functions in `lib/utils.ts` (cn helper for className merging)
+- [X] T023 Create constants file in `lib/constants.ts`
+- [X] T024 [P] Configure next/font with Japanese font (Noto Sans JP) in `app/layout.tsx`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 

@@ -7,7 +7,17 @@
       "Bash(.specify/scripts/bash/update-agent-context.sh:*)",
       "Bash(.specify/scripts/bash/check-prerequisites.sh:*)",
       "mcp__serena__activate_project",
-      "mcp__serena__get_current_config"
+      "mcp__serena__get_current_config",
+      "Bash(cat:*)",
+      "Bash(docker compose:*)",
+      "Bash(docker rm:*)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs",
+      "Bash(pnpm prisma migrate dev:*)",
+      "Bash(pnpm prisma generate:*)",
+      "Bash(pnpm prisma db seed:*)",
+      "Bash(pnpm format:*)",
+      "Bash(pnpm lint:*)"
     ],
     "deny": [],
     "ask": []
