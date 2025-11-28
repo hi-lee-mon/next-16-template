@@ -26,14 +26,14 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure with Next.js 16 and React 19 (`npx create-next-app@latest` or manual setup)
-- [ ] T002 [P] Configure TypeScript with strict mode in `tsconfig.json`
-- [ ] T003 [P] Setup Tailwind CSS 4 configuration in `tailwind.config.ts` and `src/app/globals.css`
-- [ ] T004 [P] Configure Biome for linting/formatting in `biome.json`
-- [ ] T005 [P] Create Docker configuration in `docker/docker-compose.yml` for PostgreSQL
-- [ ] T006 [P] Create environment example file `.env.example` with DATABASE_URL
-- [ ] T007 Initialize Prisma with PostgreSQL configuration in `prisma/schema.prisma`
-- [ ] T008 Setup shadcn/ui with required components (Button, Input, Label, Dialog, Toast, Card, Form)
+- [X] T001 Create project structure with Next.js 16 and React 19 (`npx create-next-app@latest` or manual setup)
+- [X] T002 [P] Configure TypeScript with strict mode in `tsconfig.json`
+- [X] T003 [P] Setup Tailwind CSS 4 configuration in `tailwind.config.ts` and `src/app/globals.css`
+- [X] T004 [P] Configure Biome for linting/formatting in `biome.json`
+- [X] T005 [P] Create Docker configuration in `docker/docker-compose.yml` for PostgreSQL
+- [X] T006 [P] Create environment example file `.env.example` with DATABASE_URL
+- [X] T007 Initialize Prisma with PostgreSQL configuration in `prisma/schema.prisma`
+- [X] T008 Setup shadcn/ui with required components (Button, Input, Label, Dialog, Toast, Card, Form)
 
 ---
 
